@@ -14,4 +14,9 @@ class ChildComponent extends Component
     {
         return view('livewire.child-component');
     }
+
+    public function add()
+    {
+        $this->title .= fake()->word() . ' ';
+    }
 }
